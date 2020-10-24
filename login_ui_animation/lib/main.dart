@@ -1,5 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:login_ui_animation/Animation/FadeAnimation.dart';
 
 void main() => runApp(
   MaterialApp(
@@ -34,9 +34,9 @@ class LoginPage extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Text("Login", style: TextStyle(color: Colors.white, fontSize: 40,),),
+                  FadeAnimation(1,Text("Login", style: TextStyle(color: Colors.white, fontSize: 40,),)),
                   SizedBox(height: 10,),
-                  Text("Welcome Back", style: TextStyle(color: Colors.white, fontSize: 18,),)
+              FadeAnimation(1.3,Text("Welcome Back", style: TextStyle(color: Colors.white, fontSize: 18,),))
                 ]
               ),
             ),
@@ -52,7 +52,7 @@ class LoginPage extends StatelessWidget {
                     child: Column(
                       children: <Widget>[
                         SizedBox(height: 60,),
-                        Container(
+                        FadeAnimation(1.5,Container(
                           decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(10),
@@ -92,11 +92,11 @@ class LoginPage extends StatelessWidget {
                               ),
                             ],
                           ),
-                        ),
+                        )),
                         SizedBox(height: 40,),
-                        Text('Forgot Password?', style: TextStyle(color: Colors.grey),),
+                        FadeAnimation(1.5,Text('Forgot Password?', style: TextStyle(color: Colors.grey),)),
                         SizedBox(height: 40,),
-                        Container(
+                    FadeAnimation(1.6,Container(
                           height: 50,
                           margin: EdgeInsets.symmetric(horizontal: 50),
                           decoration: BoxDecoration(
@@ -106,14 +106,14 @@ class LoginPage extends StatelessWidget {
                           child: Center(
                             child: Text('Login', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
                           ),
-                        ),
+                        )),
                         SizedBox(height: 50,),
-                        Text('Continue with Social Media', style: TextStyle(color: Colors.grey),),
+                        FadeAnimation(1.7,Text('Continue with Social Media', style: TextStyle(color: Colors.grey),)),
                         SizedBox(height: 30,),
                         Row(
                           children: <Widget>[
                             Expanded(
-                              child: Container(
+                              child: FadeAnimation(1.8,Container(
                                 height: 50,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(50),
@@ -122,11 +122,11 @@ class LoginPage extends StatelessWidget {
                                 child: Center(
                                   child: Text('Facebook', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
                                 ),
-                              ),
+                              )),
                             ),
                             SizedBox(width: 30,),
                             Expanded(
-                              child: Container(
+                              child: FadeAnimation(1.9,Container(
                                 height: 50,
                                 decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(50),
@@ -135,7 +135,7 @@ class LoginPage extends StatelessWidget {
                                 child: Center(
                                   child: Text('GitHub', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
                                 ),
-                              ),
+                              )),
                             ),
                           ],
                         )
